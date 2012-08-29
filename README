@@ -1,0 +1,2 @@
+- place your recovery.img in this folder and run 'zip -r ../cwm6touch.zip *'
+- your flashable zip will be in the parent directory

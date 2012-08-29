@@ -1,0 +1,11 @@
+ui_print("Installing....");
+assert(package_extract_file("recovery.img", "/tmp/recovery.img"), run_program("/sbin/busybox", "dd", "if=/tmp/recovery.img", "of=/dev/block/mmcblk0p22", "bs=4096"), delete("/tmp/recovery.img"));
+
+mount("vfat", "/dev/block/mmcblk0p28", "/emmc");
+
+run_program("/sbin/busybox", "mkdir", "-p", "/emmc/clockworkmod/.aromafm");
+run_program("/sbin/busybox", "mkdir", "-p", "/emmc/clockworkmod/.darkside");
+run_program("/sbin/busybox", "mkdir", "-p", "/emmc/clockworkmod/zips/files");
+package_extract_dir("emmc", "/emmc");
+
+ui_print("Installed CWMRTouch _by sk8erwitskil_");
