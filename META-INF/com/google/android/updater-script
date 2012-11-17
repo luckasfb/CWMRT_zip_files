@@ -4,6 +4,7 @@ assert(package_extract_file("recovery.img", "/tmp/recovery.img"), run_program("/
 mount("vfat", "/dev/block/mmcblk0p28", "/emmc");
 
 run_program("/sbin/busybox", "mkdir", "-p", "/emmc/clockworkmod/.aromafm");
+run_program("/sbin/busybox", "mkdir", "-p", "/emmc/clockworkmod/ba_backup");
 run_program("/sbin/busybox", "mkdir", "-p", "/emmc/clockworkmod/.darkside");
 run_program("/sbin/busybox", "mkdir", "-p", "/emmc/clockworkmod/zips/files");
 run_program("/sbin/busybox", "mkdir", "-p", "/emmc/clockworkmod/ors");
