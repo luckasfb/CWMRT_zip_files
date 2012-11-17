@@ -17,7 +17,6 @@ echo "You already have the latest version"
 else
 wget $url -O $path/$version
 echo "install /emmc/sk8sUpdater/$version" > /cache/recovery/openrecoveryscript
-echo -e "Your phone will now reboot into recovery\n"
-echo "Select run openrecoveryscript in recovery"
+echo -e "\nYour phone will now reboot into recovery and install the latest version\n"
 reboot recovery
 fi
