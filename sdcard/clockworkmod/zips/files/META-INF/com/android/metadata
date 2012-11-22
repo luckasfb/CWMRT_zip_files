@@ -1,0 +1,3 @@
+post-build=samsung/SGH-I727/SGH-I727:4.1.1/IMM76D/UCLF6:user/release-keys
+post-timestamp=1342745531
+pre-device=SGH-I727
